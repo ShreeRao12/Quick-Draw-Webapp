@@ -1,41 +1,33 @@
 body
 {
-background-image: linear-gradient(#34e1eb 0%, #e63045 100%);
-
+background-color: yellow;
 }
 h1
 {
-font-family: 'Quintessential', cursive;
 background-color: gainsboro;
+font-family: 'Sansita Swashed', cursive;
 padding-left: 70px;
-
 }
 #show_sketch
 {
-font-family: 'Quintessential', cursive;
-float: right;
-margin-right: 20px;
+ float:right;
+}
+#label, #confidence
+{
+ font-size: 20px;
 }
 canvas
 {
-border: 1px solid grey;
+border: 3px solid grey;
 border-radius: 20px;
 margin-top: 50px;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
 }
-#score
+
+@keyframes example
 {
-font-size: medium;
-float: left;
-margin-left: 40px;
-}
-#timer
-{
-    font-size: medium;
-    float: right;
-    margin-right: 40px;
-}
-#sketch_suggestion
-{
-    font-size: 30px;
-    font-weight: 100;
+from{box-shadow: 10px 10px 5px #34e8eb;}
+to{box-shadow: 10px 10px 5px #fba7fc;}
 }
